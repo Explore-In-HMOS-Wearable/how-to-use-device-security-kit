@@ -11,8 +11,8 @@ struct Index {
     Column({ space: 15 }) {
       Text('Safety Result: ' + this.safetyResult)
 
-      Button("Check Safety").onClick(async () => {
-        const TAG = "SafetyDetectJsTest";
+      Button('Check Safety').onClick(async () => {
+        const TAG = 'SafetyDetectJsTest';
 
         try {
           hilog.info(0x0000, TAG, 'CheckSysIntegrityOnLocal begin.');
@@ -27,8 +27,8 @@ struct Index {
       })
 
     }
-    .width("100%")
-    .height("100%")
+    .width('100%')
+    .height('100%')
     .justifyContent(FlexAlign.Center)
   }
 }
