@@ -9,7 +9,7 @@ struct Index {
 
   build() {
     Column({ space: 15 }) {
-      Text('Safety Result: ' + this.safetyResult)
+      Text(`Safety Result: ${this.safetyResult}`)
 
       Button('Check Safety').onClick(async () => {
         const TAG = 'SafetyDetectJsTest';
@@ -22,7 +22,7 @@ struct Index {
         } catch (err) {
           let e: BusinessError = err as BusinessError;
           hilog.error(0x0000, TAG, 'CheckSysIntegrityOnLocal failed: %{public}d %{public}s', e.code, e.message);
-          this.safetyResult = e.code + ' ' + e.message
+          this.safetyResult = `${e.code} ${e.message}`
         }
       })
 

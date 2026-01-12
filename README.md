@@ -7,8 +7,8 @@ System integrity checks help detect risks such as jailbroken or non-real devices
 # Preview
 
 <div>
-    <img src="./screenshots/output1.png" width="25%" />
-    <img src="./screenshots/output2.png" width="25%" />
+<img src="./screenshots/output1.png" width="25%" />
+<img src="./screenshots/output2.png" width="25%" />
 </div>
 
 # Use Cases
@@ -27,7 +27,7 @@ Libraries & Kits:
 
 - `@kit.DeviceSecurityKit` Provides APIs for performing local system integrity checks, allowing apps to determine whether the device environment is secure and make security-based decisions.
 
-# Project Directory
+# Directory Structure
 ```
 |---pages
 |   |---Index.ets              # Entry point for routing and init logic
